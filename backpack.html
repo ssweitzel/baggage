@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet2.css">
+        <style> 
+        body {background-color: rgb(119, 159, 157)}
+        #together {color:ivory; 
+            font-size: 30px;
+            opacity: .3;
+            font-family: 'snoot.org_pixel10regular';
+            src: url('px10-webfont.woff2') format('woff2'),
+            url('px10-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;}
+
+        #vintage {width: 20%;
+                opacity: 1;
+                position: absolute;
+                top: 90px;
+                right: 50px;
+                transition-duration: 2s;}
+        #headphones {width: 20%;
+                opacity: 1;
+                position: absolute;
+                top: 60px;
+                left: 100px;
+                transition-duration: 2s;}
+        #video {position:absolute;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+                opacity: .5;
+             }
+
+        #vintage:hover {opacity: 1;
+                top: 50px;
+                filter: blur(30%);}
+            #headphones:hover {opacity: 1;
+                top: 50px;
+                filter: blur(30%);}
+        </style>
+    </head>
+    <body>
+        <video playsinline autoplay muted loop id="video">
+            <source src="backpack.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+        <img src="vintagemusicsheet.webp" alt="old sheet music" id="vintage">
+        <img src="headphones.webp" alt="black headphones" id="headphones">
+        <p id="together">music brings people together and yet so many of us are divided</p>
+        </div>
+    </body>
+</html>

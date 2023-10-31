@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet2.css">
+        <style> 
+        body {background-color: rgb(242, 242, 176)}
+        p {font-style: italic; 
+            color:ivory; 
+            font-size: 50px;
+            opacity: .5;
+            font-family: 'snoot.org_pixel10regular';
+            src: url('px10-webfont.woff2') format('woff2'),
+            url('px10-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;}
+
+        #moss {width: 32%;
+                opacity: 1;
+                position: absolute;
+                top: 90px;
+                right: 50px;
+                transition-duration: 2s}
+       #leaves {width: 20%;
+                opacity: 1;
+                position: absolute;
+                top: 120px;
+                left: 50px;
+                transition-duration: 2s}
+
+        #video {position:absolute;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+                opacity: .5;}
+
+         #moss:hover {opacity: 1;
+                top: 50px;
+                filter: blur(30%)}
+        #leaves:hover {opacity: 1;
+                top: 50px;
+                filter: blur(30%)}
+
+        </style>
+    </head>
+    <body>
+        <video playsinline autoplay muted loop id="video">
+            <source src="thankyou.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+        <img src="mossstick.webp" alt="stick covered in moss" id="moss">
+        <img src="leaves.png" alt="brown leaves" id="leaves">
+        <p>i feel guilt about all of the trash that humans have left on this planet,</p>
+        </div>
+    </body>
+</html>
