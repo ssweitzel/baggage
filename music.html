@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="stylesheet.css"> 
+    <style>
+       body {background-color: rgb(177, 164, 155)}
+
+       #fav {font-family: 'two_turtle_dovesnormal';
+            src: url('doves-webfont.woff2') format('woff2'),
+            url('doves-webfont.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
+            font-size: 20px;
+            text-align: left;
+            top: 0px;
+            opacity: .6;
+            color: rgb(29, 29, 29);}
+        #chaos {font-family: 'two_turtle_dovesnormal';
+            src: url('doves-webfont.woff2') format('woff2'),
+            url('doves-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;
+            font-size: 30px;
+            position: absolute;
+            text-align: left;
+            bottom: 10px;
+            opacity: .8;
+            text-align: right;
+            right: 10px;
+            color: rgb(29, 29, 29);}
+        #slowdown {font-family: 'two_turtle_dovesnormal';
+            src: url('doves-webfont.woff2') format('woff2'),
+            url('doves-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;
+            font-size: 40px;
+            position: absolute;
+            text-align: left;
+            top: 10px;
+            opacity: .8;
+            right: 10px;
+            color: rgb(29, 29, 29);}
+        #dancing {font-family: 'two_turtle_dovesnormal';
+            src: url('doves-webfont.woff2') format('woff2'),
+            url('doves-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-size: 18px;
+            position: absolute;
+            text-align: left;
+            top: 0px;
+            opacity: .4;
+            left: 600px;
+            color: rgb(29, 29, 29);}
+        #dancing2 {font-family: 'two_turtle_dovesnormal';
+            src: url('doves-webfont.woff2') format('woff2'),
+            url('doves-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-size: 18px;
+            position: absolute;
+            text-align: left;
+            top: 0px;
+            opacity: .4;
+            right: 250px;
+            color: rgb(29, 29, 29);}
+        #passion {font-family: 'two_turtle_dovesnormal';
+            src: url('doves-webfont.woff2') format('woff2'),
+            url('doves-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-size: 37px;
+            position: absolute;
+            text-align: left;
+            bottom: 80px;
+            opacity: .7;
+            left: 5px;
+            color: rgb(29, 29, 29);}
+        #trapped {font-family: 'two_turtle_dovesnormal';
+            src: url('doves-webfont.woff2') format('woff2'),
+            url('doves-webfont.woff') format('woff');
+            font-weight: bold;
+            font-style: italic;
+            font-size: 25px;
+            position: absolute;
+            text-align: right;
+            top: 250px;
+            opacity: .6;
+            left: 75px;
+            color: rgb(29, 29, 29);}
+        #passion2 {font-family: 'two_turtle_dovesnormal';
+            src: url('doves-webfont.woff2') format('woff2'),
+            url('doves-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-size: 37px;
+            position: absolute;
+            text-align: left;
+            bottom: 50px;
+            opacity: .7;
+            left: 5px;
+            color: rgb(29, 29, 29);}
+        #passion3 {font-family: 'two_turtle_dovesnormal';
+            src: url('doves-webfont.woff2') format('woff2'),
+            url('doves-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            font-size: 37px;
+            position: absolute;
+            text-align: left;
+            bottom: 20px;
+            opacity: .7;
+            left: 5px;
+            color: rgb(29, 29, 29);}
+
+            #back {color:darkslategray;
+                    position: absolute;
+                    opacity: 1;
+                    top: 180px;
+                    left: 570px;
+                    font-size: 400px;}
+            #bb {font-size: 50px;
+            font-family: 'two_turtle_dovesnormal';
+            src: url('doves-webfont.woff2') format('woff2'),
+            url('doves-webfont.woff') format('woff');
+            font-weight: bolder;
+            font-style: normal;
+            color: rgb(29, 29, 29);
+            text-decoration: none;
+            left: 49%;
+            opacity: 0;
+            top: 760px;
+            position: absolute;
+            transition-duration: 2s;}
+        #bb:hover {opacity: 1;
+                text-decoration: wavy;
+                top: 750px;}
+
+             #cpaper {opacity: .2;
+                position: absolute;
+                    width: 600px;
+                    top: 0px;
+                    left: 300px;}
+            #paper {opacity: .1;
+                position: absolute;
+                    width: 500px;
+                    right: 10px;
+                bottom: 100px;}
+            #ccpaper {opacity: .1;
+                position: absolute;
+                    width: 400px;
+                    left: 200px;
+                    bottom: 150px;}
+
+            #flower {opacity: 0.05;
+                position: absolute;
+                    width: 400px;
+                    left: 200px;
+                    bottom: 150px;}
+            #notes {opacity: 0.05;
+                position: absolute;
+                    width: 300px;
+                    right: 120px;
+                bottom: 190px;}
+            #flower:hover {opacity: .8;
+                transition-duration: 2s;}
+            #notes:hover {opacity: .5;
+                transition-duration: 2s;}
+            
+    </style>
+</head>
+    <body>
+    <p id="back">—</p>
+    <a href="backpack.html"><p id="bb">back</p></a>
+    <img src="coffee.png" id="paper">
+    <img src="cpaper.png" id="cpaper">
+    <img src="coffee2.webp" id="ccpaper">
+    <img src="flower.png" id="flower">
+    <img src="notes.webp" id="notes">
+    <p id="trapped">
+        listening to music can free the soul <br/>
+        is it normal for so many souls to feel trapped?        
+    </p>
+    <p id="passion"> where is the passion? where is the passion? where is the passion? </p>
+    <p id="passion2">where is the passion? where is the passion? where is the passion?</p>
+    <p id="passion3">where is the passion? where is the passion?</p>
+    <p id="chaos">why must our music be as chaotic as the world around us?<br/>
+        does it help us process that chaos?
+        </p>
+    <p id="fav">favorites:<br/>
+        john field “no. 14 in c major” <br/>
+        takashi kobuko “water” <br/>
+        chopin “24 preludes op. 28” <br/>
+        chypho “entomongaku” <br/>
+        donald byrd “wind parade” <br/>
+        joe hisaishi “merrry-go-round of life” <br/>
+        bach “11 bagatelles, op.119: 5. risoluto” <br/>
+        chet baker “farewell san fransisco” <br/>
+        <p id="slowdown">why can't we slow down? must everything move so quickly? </p>
+        <p id="dancing2">
+            I'll show you every move I know <br/>
+Though they won't all shake it off <br/>
+Even when I'm dancing in the dark sometimes <br/>
+I can not move enough <br/>
+<br>
+But I'll be someone to understand <br/>
+And show you places that I go <br/>
+So that when we're dancing, the camera's spinning <br/>
+The pain is the first thing that's to go <br/>
+<br>
+Oh, I'm afraid of losing me <br/>
+I've been getting stripped bare for years <br/>
+But I'm just hungry, I'm just dancer <br/>
+I'm just sick of the food and the show <br/>
+<br> 
+I am on the precipice of something <br/>
+Underneath my skin, it's bubbling <br/>
+A push off a cliff, a reason to kiss <br/>
+Oh, I am something, I am something <br/>
+But I'm not alone <br/>
+I'm not alone with you <br/>
+I'm not alone <br/>
+I'm not alone with you <br/>
+<br>
+And when I push past this seminal cliff note (oh) <br/>
+This focused permanence, this thunderstorm (oh) <br/>
+I'll come out trying to dance (oh) <br/>
+'Cause I'll be using the tools that I know <br/>
+        </p>
+        <p id="dancing">
+            I've been chronically tired since high school <br/>
+And chronically hungry since three in the morning <br/>
+The phone light on my eyes is giving me a headache <br/>
+And now it's morning <br/>
+<br>
+I get up <br/>
+Well, I've been up <br/>
+I've been walking 'round enough <br/>
+To say that my mornings are no longer mornings <br/>
+My midday is lost and the evening is when I wake up <br/>
+<br>
+I'll teach you every move I know <br/>
+Though I don't know how to name them all <br/>
+Even when I'm dancing when I'm alone, I feel invisible eyeballs <br/>
+<br>
+But I want someone to hold my hand <br/>
+And show me all the moves they know <br/>
+So that when we're dancing, the camera's spinning <br/>
+Their eyes are the only ones I know <br/>
+<br>
+Oh, I've been in a losing streak <br/>
+I've been eating badly for years <br/>
+But I want dancing, I want hunger <br/>
+I want everything you know <br/>
+<br>
+Oh, I've been wanting to feel free <br/>
+But I've been touching stuff again and again <br/>
+And if my disorders could chill <br/>
+I'm sure I would know everything I don't <br/>
+<br>
+I've been chronically bad at small talk <br/>
+And chronically low on serotonin <br/>
+Did you hear they've been doing research? <br/>
+The cause of depression may not be as simple as that <br/>
+<br>
+I wanna get up like I used to <br/>
+And search my eyes enough <br/>
+To work out the feelings inside of my bones that make me feel like they will just crack and break up <br/>
+</p>
+        . . . <br/>
+        . . . <br/>
+        . . .</p>
+    </body>
+</html>

@@ -3,81 +3,52 @@
     <head>
         <link rel="stylesheet" href="stylesheet.css">
     <style> 
-        body {background-image: url(bags.png); 
+        body {background-image: url(1baggage.png); 
         background-size: cover;
         background-repeat: no-repeat;
-        background-color: rgb(177, 164, 155)}
-        p {color: rgb(29, 29, 29);
-            opacity: 0;
-            font-size: 35px;
-            font-weight: bold; 
-            font-family: 'two_turtle_dovesnormal';
-            src: url('doves-webfont.woff2') format('woff2'),
-            url('doves-webfont.woff') format('woff');
-            font-weight:bolder;
-            font-style:normal;
-            transition-duration: .9s;}
-        p:hover {opacity: 1;
-                filter: blur(30%);
-                filter:drop-shadow(100%)}
+        background-color: rgb(129, 114, 99)}
 
-        #tote {position: absolute;
-                font-size: 30px;
-                top: 40%; 
-                left: 5%;
-                text-decoration: none;}
-        #tote:hover {opacity: 1;
-                filter: blur(30%);
-                filter:drop-shadow(100%);}
+        #tote {width: 25%;
+                position: absolute;
+                bottom: 20%;
+                opacity: 0;}
+      
+        #clown {width: 16%;
+                position: absolute;
+                opacity: 0; 
+                bottom: 28%;
+                left: 30%;}
 
-        #clown {position: absolute;
-                font-size: 30px; 
-                top: 40%;
-                left: 35%;
-                text-decoration: none;}
-        #clown:hover {opacity: 1;
-                filter: blur(30%);
-                filter:drop-shadow(100%);
-}
         #ty {position: absolute;
-                text-align: center;
-                font-size: 30px; 
-                top: 40%; 
-                left: 65%;
-                text-decoration: none;}
-        #ty:hover {opacity: 1;
-                filter: blur(30%);
-                filter:drop-shadow(100%);
-            }
-                #back {position: absolute;
-                font-size: 30px; 
-                top: 40%;
-                left: 80%;
-                text-decoration: none;}
-        #back:hover {opacity: 1;
-                filter: blur(30%);
-                filter:drop-shadow(100%);
-            }
+                width: 18%;
+                opacity: 0;
+                bottom: 28%; 
+                right: 26%;}
+
+        #back {position: absolute;
+                width: 20%;
+                opacity: 0; 
+                bottom: 30%;
+                right: 0%;}
 
         #title {opacity: 1;
-            color:darkslategray;
+            color:rgb(26, 44, 44);
             position: absolute;
             font-size: 85px;
-            left: 41%;
+            left: 38.4%;
             font-family: 'lexographerregular';
             src: url('lexo-webfont.woff2') format('woff2'),
             url('lexo-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;}
+        
     </style>
     </head>
     <body>
-        <h1 id="title">baggage</h1>
-        <a id="tote" href="tote.html"><p>open tote bag!</p></a>
-        <a id="clown" href="clown.html"><p>open clown<br>
-            crossbody!</p></a>
-        <a id="ty" href="thankyou.html" ><p>open thank you<br>
-           plastic bag!</p></a>
-        <a id="back" href="backpack.html"><p>open backpack!</p></a>
+        <a href="index.html"><h1 id="title">baggage</h1></a>
+        <a href="tote.html"><img src="square.png" id="tote"></a>
+        <a href="clown.html"><img src="square.png" id="clown"></a>
+        <a href="thankyou.html"><img src="square.png" id="ty"></a>
+        <a href="backpack.html"><img src="square.png" id="back"></a>
     </body>
 </html>

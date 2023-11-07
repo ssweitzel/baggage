@@ -5,19 +5,132 @@
         <style> 
         body {background-color: rgb(174, 86, 72)}
         p { color:ivory;
-            opacity: .5;
+            opacity: 1;
             font-family: 'tombats_smiliesregular';
             src: url('tsmiles-webfont.woff2') format('woff2'),
             url('tsmiles-webfont.woff') format('woff');
             font-weight: normal;
             font-style: normal;}
         #smiley {position: absolute;
+                    opacity: .5;
                     font-size: 100px; 
                     bottom: 100px;
                     left:20px;}
-        </style>
+        #world {color:ivory; 
+            opacity: .4; 
+            position:absolute;
+            right: 20px;
+            top: 10px;
+            font-size: 30px;
+            font-family: 'snoot.org_pixel10regular';
+            src: url('px10-webfont.woff2') format('woff2'),
+            url('px10-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;}
+        #new {color:ivory; 
+            opacity: .5; 
+            position:absolute;
+            left: 350px;
+            bottom: 250px;
+            text-align: left;
+            font-size: 40px;
+            font-family: 'snoot.org_pixel10regular';
+            src: url('px10-webfont.woff2') format('woff2'),
+            url('px10-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;}
+
+        #title { font-size: 50px;
+            color:rgb(95, 47, 39);
+            font-family: 'lexographerregular';
+            src: url('lexo-webfont.woff2') format('woff2'),
+            url('lexo-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            left: 43%;            
+            bottom: 0%;
+            text-decoration: none;
+            position: absolute;}
+                    
+        #video {position:absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            opacity: .6;}
+        #bag {position: absolute;
+            width: 25%;
+            opacity: 0;
+            top: 320px;
+            left: 600px;}
+
+        #sketch {width: 17%;
+            opacity: 1;
+            position: absolute;
+            top: 150px;
+            left: 100px;
+            transition-duration: 2s;}
+        #clay {width: 20%;
+            opacity: 1;
+            position: absolute;
+            top: 100px;
+            right: 100px;
+            transition-duration: 2s;}
+        #yarn {width: 18%;
+            opacity: 1;
+            position: absolute;
+            bottom: 150px;
+            right: 50px;
+            transition-duration: 2s;}
+        #paint {width: 20%;
+            opacity: 1;
+            position: absolute;
+            bottom: 0px;
+            left: 200px;
+            transition-duration: 2s;}
+        #slime {width: 10%;
+            opacity: 1;
+            position: absolute;
+            top: 80px;
+            left: 650px;
+            transition-duration: 2s;}
+
+        #sketch:hover {opacity: 1;
+                top: 100px;
+                filter: blur(30%);}
+        #clay:hover {opacity: 1;
+                top: 50px;
+                filter: blur(30%);}
+        #yarn:hover {opacity: 1;
+                bottom: 200px;
+                filter: blur(30%);}
+        #paint:hover {opacity: 1;
+                bottom: 50px;
+                filter: blur(30%);}
+        #slime:hover 
+                {opacity: 1;
+                top: 30px;
+                filter: blur(30%);}
+
+       </style>
     </head>
     <body>
+        <video playsinline autoplay muted loop id="video">
+            <source src="tote.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+        <a href="baggage.html"><p id="title">baggage</p></a>
         <p id="smiley">CEDH</p>
+        <p id="world">i want to sculpt a new world with my bare hands <br/>
+            i'm not happy with the one we're currently living in</p>
+        <p id="new">how about we create a new world?<br/>
+                    create a lovely new forgiving world?</p>
+        <img src="paint.png" alt="brown paint tubes" id=paint>
+        <a href=sketchbook.html><img src="notebook.png" alt="yellow composition sketchbook" id="sketch"></a>
+        <a href=clay.html><img src="clay.png" alt="block of cut clay" id="clay"></a>
+        <img src="yarn.png" alt="ball of tan yarn" id="yarn">
+        <img src="slime.png" alt="red slime in clear container" id="slime">
+        </div>
     </body>
 </html>

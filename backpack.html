@@ -12,6 +12,43 @@
             url('px10-webfont.woff') format('woff');
             font-weight: normal;
             font-style: italic;}
+        #hate {color:ivory; 
+            font-size: 30px;
+            opacity: .5;
+            font-family: 'snoot.org_pixel10regular';
+            src: url('px10-webfont.woff2') format('woff2'),
+            url('px10-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;
+            position:absolute;
+            bottom: 0px;
+            right: 0px;}
+
+        #title { font-size: 50px;
+            color:darkslategray;
+            font-family: 'lexographerregular';
+            src: url('lexo-webfont.woff2') format('woff2'),
+            url('lexo-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            text-align: center;
+            bottom: 0%;
+            left: 43%;
+            text-decoration: none;
+            position: absolute;
+            }
+
+        #video {position:absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            opacity: .6;}
+        #bag {position: absolute;
+            width: 25%;
+            opacity: 0;
+            top: 320px;
+            left: 600px;}
 
         #vintage {width: 20%;
                 opacity: 1;
@@ -19,26 +56,46 @@
                 top: 90px;
                 right: 50px;
                 transition-duration: 2s;}
-        #headphones {width: 20%;
+        #headphones {width: 15%;
                 opacity: 1;
                 position: absolute;
                 top: 60px;
                 left: 100px;
                 transition-duration: 2s;}
-        #video {position:absolute;
-                right: 0;
-                bottom: 0;
-                min-width: 100%;
-                min-height: 100%;
-                opacity: .5;
-             }
+        #leather {width: 15%;
+                opacity: 1;
+                position: absolute;
+                bottom: 80px;
+                right: 250px;
+                transition-duration: 2s;}
+        #mints {width: 12%;
+                opacity: 1;
+                position: absolute;
+                bottom: 100px;
+                left: 250px;
+                transition-duration: 2s;}
+        #tuner {width: 15%;
+                opacity: 1;
+                position: absolute;
+                top: 100px;
+                right: 600px;
+                transition-duration: 2s}
 
         #vintage:hover {opacity: 1;
                 top: 50px;
                 filter: blur(30%);}
-            #headphones:hover {opacity: 1;
-                top: 50px;
+        #headphones:hover {opacity: 1;
+                top: 20px;
                 filter: blur(30%);}
+        #leather:hover {opacity: 1;
+                bottom: 120px;
+                filter: blur(30%);}
+        #mints:hover {opacity: 1;
+                bottom: 150px;
+                filter: blur(30%);}
+        #tuner:hover {opacity: 1;
+                top: 50px;
+                filter: blur(30%)}
         </style>
     </head>
     <body>
@@ -47,9 +104,15 @@
         </video>
 
         <div class="content">
-        <img src="vintagemusicsheet.webp" alt="old sheet music" id="vintage">
-        <img src="headphones.webp" alt="black headphones" id="headphones">
+        <a href="baggage.html"><h1 id="title">baggage</h1></a>
+        <img src="vintagemusicsheet.png" alt="old sheet music" id="vintage">
+        <a href="music.html"><img src="headphones.png" alt="black headphones" id="headphones"></a>
+        <a href="book.html"><img src="leather.png" alt="leather sketchbook" id="leather"></a>
+        <img src="mints.png" alt="red tin of altoids" id="mints">
+        <img src="tuner.png" alt="gray tuner" id="tuner">
         <p id="together">music brings people together and yet so many of us are divided</p>
+        <P id="hate">i hate seeing the world like this <br/>
+            but how much can music really do?</P>
         </div>
     </body>
 </html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="stylesheet2.css">
+        <style> 
+        body {background-color: rgb(222, 223, 222)}
+        p {color:ivory; 
+            opacity: 1; 
+            font-family: 'snoot.org_pixel10regular';
+            src: url('px10-webfont.woff2') format('woff2'),
+            url('px10-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: italic;}
+        #life {position: absolute;
+                    font-size: 25px; 
+                    bottom: 100px;
+                    right:20px;
+                opacity: .6;}
+        #goofy { color:ivory;
+            opacity: .5;
+            font-size: 50px;
+            font-family: 'tombats_threeregular';
+            src: url('tombats3-webfont.woff2') format('woff2'),
+            url('tombats3-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;}
+
+        #title { font-size: 50px;
+            color:rgb(60, 60, 60);
+            font-family: 'lexographerregular';
+            src: url('lexo-webfont.woff2') format('woff2'),
+            url('lexo-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            text-align: center;
+            bottom: 0%;
+            left: 43%;
+            text-decoration: none;
+            position: absolute;}
+            
+
+        #video {position:absolute;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            opacity: .6;}
+        #bag {position: absolute;
+            width: 25%;
+            opacity: 0;
+            top: 320px;
+            left: 600px;}
+
+        #plushie {width: 20%;
+                opacity: 1;
+                position: absolute;
+                top: 90px;
+                left: 50px;
+                transition-duration: 2s;}
+        #kazoo {width: 15%;
+                opacity: 1;
+                position: absolute;
+                bottom: 250px;
+                right: 50px;
+                transition-duration: 2s;}
+        #paint {width: 13%;
+                opacity: 1;
+                position: absolute;
+                bottom: 50px;
+                left: 300px;
+                transition-duration: 2s;}
+        #nose {width: 15%;
+                opacity: 1;
+                position: absolute;
+                top: 100px;
+                right: 120px;
+                transition-duration: 2s;}
+        #sticker {width: 13%;
+                opacity: 1;
+                position: absolute;
+                top: 80px;
+                left: 600px;
+                transition-duration: 2s;}    
+
+        #plushie:hover {opacity: 1;
+                top: 50px;
+                filter: blur(30%);}
+        #kazoo:hover {opacity: 1;
+                bottom: 300px;
+                filter: blur(30%);}
+        #paint:hover {opacity: 1;
+                bottom: 100px;
+                filter: blur(30%);}
+        #nose:hover {opacity: 1;
+                top: 50px;
+                filter: blur(30%);}
+        #sticker:hover {opacity: 1;
+                top: 30px;
+                filter: blur(30%);}
+        </style>
+    </head>
+    <body>
+        <video playsinline autoplay muted loop id="video">
+            <source src="clown.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+        <a href="baggage.html"><h1 id="title">baggage</h1></a>
+        <a href="plushie.html"><img src="plushie.png" alt="black and white plushie with yellow spotted hat" 
+        id="plushie"></a>
+        <img src="kazoo.png" alt="gold kazoo" id="kazoo">
+        <img src="facepaint.png" alt="raindbow colored face paint palette" id="paint">
+        <a href="clownnose.html"><img src="nose.png" alt="clown nose next to container" id="nose"></a>
+        <img src="sticker.png" alt="sheet of stickers" id="sticker">
+        <p id="life">you can't take this life thing so seriously</canvas></p>
+        <p id="goofy">dkmn</p>
+        </div>
+    </body>
+</html>
