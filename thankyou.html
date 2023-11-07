@@ -12,12 +12,38 @@
             src: url('px10-webfont.woff2') format('woff2'),
             url('px10-webfont.woff') format('woff');
             font-weight: normal;
-            font-style: italic;}
+            font-style: italic;
+                position:absolute;}
 
-        #moss {width: 32%;
+        #title { font-size: 50px;
+            color:rgb(86, 86, 62);
+            font-family: 'lexographerregular';
+            src: url('lexo-webfont.woff2') format('woff2'),
+            url('lexo-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            text-align: center;
+            bottom: 0%;
+            left: 43%;
+            text-decoration: none;
+            position: absolute;}
+
+        #video {position:absolute;
+                right: 0;
+                bottom: 0;
+                min-width: 100%;
+                min-height: 100%;
+                opacity: .6;}
+        #bag {position: absolute;
+            width: 25%;
+            opacity: 0;
+            top: 320px;
+            left: 600px;}
+
+        #bottle {width: 20%;
                 opacity: 1;
                 position: absolute;
-                top: 90px;
+                top: 150px;
                 right: 50px;
                 transition-duration: 2s}
        #leaves {width: 20%;
@@ -26,18 +52,38 @@
                 top: 120px;
                 left: 50px;
                 transition-duration: 2s}
+        #plastic {width: 15%;
+                opacity: 1;
+                position: absolute;
+                bottom: 120px;
+                left: 70px;
+                transition-duration: 2s}
+        #moss {width: 30%;
+                opacity: 1;
+                position: absolute;
+                bottom: 100px;
+                right: 50px;
+                transition-duration: 2s}
+        #tea {width: 15%;
+                opacity: 1;
+                position: absolute;
+                top: 100px;
+                right: 600px;
+                transition-duration: 2s}
 
-        #video {position:absolute;
-                right: 0;
-                bottom: 0;
-                min-width: 100%;
-                min-height: 100%;
-                opacity: .5;}
-
-         #moss:hover {opacity: 1;
-                top: 50px;
+         #bottle:hover {opacity: 1;
+                top: 100px;
                 filter: blur(30%)}
         #leaves:hover {opacity: 1;
+                top: 80px;
+                filter: blur(30%)}
+        #plastic:hover {opacity: 1;
+                bottom: 180px;
+                filter: blur(30%)}
+        #moss:hover {opacity: 1;
+                bottom: 150px;
+                filter: blur(30%)}
+        #tea:hover {opacity: 1;
                 top: 50px;
                 filter: blur(30%)}
 
@@ -49,9 +95,13 @@
         </video>
 
         <div class="content">
-        <img src="mossstick.webp" alt="stick covered in moss" id="moss">
-        <img src="leaves.png" alt="brown leaves" id="leaves">
+        <a href="baggage.html"><h1 id="title">baggage</h1></a>
+        <img src="mossstick.png" alt="stick covered in moss" id="moss">
+        <a href="leaf.html"><img src="leaves.png" alt="brown leaves" id="leaves"></a>
+        <img src="plastic.png" alt="pink crumpled plastic bag" id="plastic">
+        <a href="plastic.html"><img src="bottle.png" alt="crushed plastic bottle with black cap" id="bottle"></a>
+        <img src="tea.png" alt="tea bag" id="tea">
         <p>i feel guilt about all of the trash that humans have left on this planet,</p>
-        </div>
+    </div>
     </body>
 </html>
